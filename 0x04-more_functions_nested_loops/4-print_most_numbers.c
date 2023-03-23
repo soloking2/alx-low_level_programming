@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- *print_numbers - Entry point
+ *print_most_numbers - Entry point
  */
-void print_numbers(void)
+void print_most_numbers(void)
 {
 	int i;
 
