@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- *print_sqaure - Entry point
+ *print_square - Entry point
  *@size: input
  */
 void print_square(int size)
