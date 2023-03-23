@@ -2,12 +2,13 @@
 
 /**
  *main - Entry point
+ *Return: Always 0 (Success)
  */
-void main(void)
+int main(void)
 {
 	int i;
 
-	for (i = 1; i < 101; i++)
+	for (i = 1; i <= 100; i++)
 	{
 		if (i % 15 == 0)
 		{
@@ -28,4 +29,5 @@ void main(void)
 		}
 	}
 	printf("\n");
+	return (0);
 }
