@@ -26,5 +26,5 @@ void rev_string(char *s)
 		start++;
 		end--;
 	}
-	end[len + 1] = '\0';
+	*end = '\0';
 }
