@@ -4,7 +4,7 @@
  **_strncpy - Entry point
  *@dest: input
  *@src: input
- *n: input
+ *@n: input
  *Return: characters
  */
 char *_strncpy(char *dest, char *src, int n)
