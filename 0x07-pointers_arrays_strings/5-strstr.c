@@ -10,6 +10,8 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
+	if (*needle == 0)
+		return (haystack);
 
 	while (*haystack)
 	{
@@ -26,5 +28,5 @@ char *_strstr(char *haystack, char *needle)
 			return (temp);
 		haystack = temp + 1;
 	}
-	return (NULL);
+	return ('\0');
 }
