@@ -10,12 +10,12 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	char *searchItem = needle, *searchString = haystack;
 
 	while (*haystack)
 	{
-		searchString = haystack;
-		needle = searchItem;
+		char *temp;
+
+		temp = haystack;
 		while (*haystack == *needle)
 		{
 			haystack++;
@@ -23,8 +23,8 @@ char *_strstr(char *haystack, char *needle)
 		}
 
 		if (*needle == '\0')
-			return (haystack);
-		haystack = searchString + 1;
+			return (temp);
+		haystack = temp + 1;
 	}
 	return (NULL);
 }
