@@ -40,9 +40,7 @@ int palindromeHelperFunc(char *s, int start, int end)
 	if (s[start] != s[end])
 	{
 		return (0);
-	} else
-	{
-		return (palindromeHelperFunc(s, start + 1, end - 1));
 	}
+	return (palindromeHelperFunc(s, start + 1, end - 1));
 }
 
