@@ -14,8 +14,8 @@ int main(int argc, char *argv[])
 	if (argc == 1)
 	{
 		printf("%d\n", 0);
-		return (1);
-	}
+	} else
+	{
 		for (i = 1; i < argc; i++)
 		{
 			for (j = 0; argv[i][j] != '\0'; j++)
@@ -30,4 +30,5 @@ int main(int argc, char *argv[])
 		}
 		printf("%d\n", result);
 		return (0);
+	}
 }
