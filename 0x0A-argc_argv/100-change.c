@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
 		coins += cents / 2;
 		cents %= 2;
 	}
-	if (cents % 1 > 0)
+	if (cents % 1 >= 0)
 	{
 		coins += cents;
 	}
