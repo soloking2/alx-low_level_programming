@@ -7,7 +7,7 @@
  * @height: input
  * Return: pointer
  */
-char **alloc_grid(int width, int height)
+int **alloc_grid(int width, int height)
 {
 	char **arr;
 	int i, j;
